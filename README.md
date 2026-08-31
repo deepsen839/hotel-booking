@@ -451,53 +451,12 @@ The explicit new preference updates the previous preference from `AC` to `NON_AC
 
 ---
 
-## 5. "We are 7 people, 2 kids aged 4 and 6, need rooms this weekend"
-
-### Guest
-
-```text
-We are 7 people, 2 kids aged 4 and 6, need rooms this weekend
-```
-
-### Extracted information
-
-```json
-{
-  "adults": 7,
-  "children": 2,
-  "children_ages": [4, 6],
-  "check_in": "this weekend"
-}
-```
-
-Deterministic date handling resolves the weekend expression into concrete dates according to the application's date logic.
-
-### Bot
-
-```text
-What date would you like to check out?
-```
-
-If the application defines `this weekend` as a complete stay range, it may instead proceed directly once all required information is available. Otherwise, it explicitly asks for the missing check-out date rather than inventing one.
-
-After a valid check-out date is supplied:
-
-### Bot
-
-```text
-Here are the best room options for your group:
-
-1. Suitable combination — total price ...
-2. Suitable combination — total price ...
-3. Suitable combination — total price ...
-
+## 5. We are 7 people, 2 kids aged 4 and 6, need rooms this weekend
+Here are the best options at Hotel Sahu for 7 guest(s), from 2026-09-05 to 2026-09-07:
+1. 2 × Family Suite AC — ₹20000 total for 2 night(s). Comfortable fit for 7 guests using 2 room(s).
+2. 2 × Standard Non-AC, 1 × Family Suite AC — ₹16000 total for 2 night(s). Comfortable fit for 7 guests using 3 room(s).
+3. 1 × Standard Non-AC, 1 × Deluxe Double AC, 1 × Family Suite AC — ₹18000 total for 2 night(s). Comfortable fit for 7 guests using 3 room(s).
 Reply with the option number if you would like to book.
-```
-
-The room recommendation logic considers total occupancy when generating combinations. The policy `children_under_5_free` is read from `inventory.json`; it is not hardcoded into the business logic.
-
----
-
 ## 6. Mid-booking: "Do you have a swimming pool?"
 
 ### Guest
