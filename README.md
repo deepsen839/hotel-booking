@@ -251,65 +251,25 @@ The same application logic can therefore work with another hotel's inventory by 
 
 # Test Transcripts
 
-## 1. "Room available for tomorrow?"
 
-### Guest
-
-```text
 Room available for tomorrow?
-```
-
-### Bot
-
-```text
-How many adults will be staying?
-```
-
-### Guest
-
-```text
-2
-```
-
-### Bot
-
-```text
 What date would you like to check out?
-```
-
-### Guest
-
-```text
-day after tomorrow
-```
-
-### Bot
-
-```text
-Do you prefer an AC room or a non-AC room?
-```
-
-### Guest
-
-```text
-AC
-```
-
-### Bot
-
-```text
-Here are the best room options for you:
-
-1. Option 1 ...
-2. Option 2 ...
-3. Option 3 ...
-
+4th sept 2026
+How many adults will be staying?
+3
+Here are the best options at Hotel Sahu for 3 guest(s), from 2026-09-01 to 2026-09-04:
+1. 1 × Family Suite AC — ₹15000 total for 3 night(s). Comfortable fit for 3 guests using 1 room(s).
+2. 2 × Standard Non-AC — ₹9000 total for 3 night(s). Comfortable fit for 3 guests using 2 room(s).
+3. 1 × Standard Non-AC, 1 × Deluxe Double AC — ₹12000 total for 3 night(s). Comfortable fit for 3 guests using 2 room(s).
 Reply with the option number if you would like to book.
-```
-
-The important behavior here is that the agent resolves `tomorrow` as the check-in date but does not automatically assume a check-out date or a one-night stay.
-
----
+non ac ka kitna rate hai
+Here are the best options at Hotel Sahu for 3 guest(s), from 2026-09-01 to 2026-09-04:
+1. 2 × Standard Non-AC — ₹9000 total for 3 night(s). Comfortable fit for 3 guests using 2 room(s).
+2. 3 × Standard Non-AC — ₹13500 total for 3 night(s). Comfortable fit for 3 guests using 3 room(s).
+3. 1 × Standard Non-AC + 1 extra bed(s) — ₹6000 total for 3 night(s). Exact capacity match for 3 guests.
+Reply with the option number if you would like to book.
+do you have swimming pool
+I don't have that information in the available hotel data, so I can't 
 
 ## 2. "2 rooms, 15th to 17th, 4 adults, AC"
 
