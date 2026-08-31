@@ -102,7 +102,7 @@ GROQ_MODEL=openai/gpt-oss-20b
 PORT=5000
 DEBUG=False
 ```
-
+need to clear location storage from browser in order to process fresh prompt
 From a clean clone, run the application in three commands or fewer:
 
 ```bash
