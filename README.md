@@ -98,7 +98,9 @@ Create a `.env` file from `.env.example` and add a valid Groq API key and model:
 
 ```env
 GROQ_API_KEY=your_groq_api_key
-GROQ_MODEL=your_available_groq_model
+GROQ_MODEL=openai/gpt-oss-20b
+PORT=5000
+DEBUG=False
 ```
 
 From a clean clone, run the application in three commands or fewer:
