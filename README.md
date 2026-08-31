@@ -308,58 +308,12 @@ No follow-up question is required because the message already contains the dates
 
 ---
 
-## 3. "kal ke liye room chahiye, 3 log hain"
-
-### Guest
-
-```text
-kal ke liye room chahiye, 3 log hain
-```
-
-### Bot
-
-```text
-What date would you like to check out?
-```
-
-The agent understands:
-
-- `kal` = tomorrow
-- `3 log hain` = 3 guests/adults when children are not separately mentioned
-
-It does not invent the check-out date.
-
-### Guest
-
-```text
-3rd sept tak
-```
-
-### Bot
-
-```text
-Do you prefer an AC room or a non-AC room?
-```
-
-### Guest
-
-```text
-AC
-```
-
-### Bot
-
-```text
-Here are the best options for you:
-
-1. Option 1 ...
-2. Option 2 ...
-3. Option 3 ...
-
+## kal ke liye room chahiye, 3 log hain
+Here are the best options at Hotel Sahu for 3 guest(s), from 2026-09-01 to 2026-09-04:
+1. 2 × Standard Non-AC — ₹9000 total for 3 night(s). Comfortable fit for 3 guests using 2 room(s).
+2. 3 × Standard Non-AC — ₹13500 total for 3 night(s). Comfortable fit for 3 guests using 3 room(s).
+3. 1 × Standard Non-AC + 1 extra bed(s) — ₹6000 total for 3 night(s). Exact capacity match for 3 guests.
 Reply with the option number if you would like to book.
-```
-
----
 
 ## 4. "AC room chahiye" -> later -> "non-AC me kya rate hai"
 
