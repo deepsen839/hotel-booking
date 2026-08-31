@@ -315,54 +315,24 @@ Here are the best options at Hotel Sahu for 3 guest(s), from 2026-09-01 to 2026-
 3. 1 × Standard Non-AC + 1 extra bed(s) — ₹6000 total for 3 night(s). Exact capacity match for 3 guests.
 Reply with the option number if you would like to book.
 
-## 4. "AC room chahiye" -> later -> "non-AC me kya rate hai"
-
-### Guest
-
-```text
-AC room chahiye
-```
-
-### Bot
-
-```text
-Sure. Please tell me the check-in date.
-```
-
-The state now stores:
-
-```json
-{
-  "ac_preference": "AC"
-}
-```
-
-Later in the conversation:
-
-### Guest
-
-```text
-non-AC me kya rate hai
-```
-
-### Extracted information
-
-```json
-{
-  "intent": "price_query",
-  "ac_preference": "NON_AC"
-}
-```
-
-### Bot
-
-```text
-The available non-AC room option is shown in the hotel inventory.
-Please share your check-in and check-out dates so I can calculate the total stay price.
-```
-
-The explicit new preference updates the previous preference from `AC` to `NON_AC`. The agent does not continue using the old AC preference after the guest has changed it.
-
+## 4. AC room chahiye
+What date would you like to check in?
+4th sept
+What date would you like to check out?
+8th sept
+How many adults will be staying?
+3
+Here are the best options at Hotel Sahu for 3 guest(s), from 2026-09-04 to 2026-09-08:
+1. 1 × Family Suite AC — ₹20000 total for 4 night(s). Comfortable fit for 3 guests using 1 room(s).
+2. 2 × Deluxe Double AC — ₹20000 total for 4 night(s). Comfortable fit for 3 guests using 2 room(s).
+3. 1 × Deluxe Double AC, 1 × Super Deluxe AC — ₹24000 total for 4 night(s). Comfortable fit for 3 guests using 2 room(s).
+Reply with the option number if you would like to book.
+non ac ka kitna rate hai
+Here are the best options at Hotel Sahu for 3 guest(s), from 2026-09-04 to 2026-09-08:
+1. 2 × Standard Non-AC — ₹12000 total for 4 night(s). Comfortable fit for 3 guests using 2 room(s).
+2. 3 × Standard Non-AC — ₹18000 total for 4 night(s). Comfortable fit for 3 guests using 3 room(s).
+3. 1 × Standard Non-AC + 1 extra bed(s) — ₹8000 total for 4 night(s). Exact capacity match for 3 guests.
+Reply with the option number if you would like to book.
 ---
 
 ## 5. We are 7 people, 2 kids aged 4 and 6, need rooms this weekend
